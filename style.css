@@ -11,40 +11,30 @@ html *{
 }
 header{
     background-color: var(--primary-clr);
-    height: 20vh;
+    height: 15vh;
 }
 header .content{
     display: flex;
-        flex-wrap: wrap;
-        /* align-items: center; */
-        flex-direction: column;
-        height: 100%;
-        align-content: center;
-        justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+    align-content: center;
+    justify-content: space-between;
 }
 
 h2{
-    /* height: 20vh; */
     text-align: center;
-    /* padding: 2rem; */
     margin: auto;
-    height: 50%;
+
 
 }
 h4{
     color: var(--primary-clr-blue);
     font-weight: 700;
-    margin: auto;
+    margin: 0.5rem auto;
 }
 h2 span{
     color: var(--primary-clr-blue);
-}
-
-header .img-container-2 img{
-    width: 50%;
-    min-width: 200px;
-    max-width: 400px;
-    padding: 2rem;
 }
 main{
     padding: 2rem;
@@ -57,7 +47,7 @@ main textarea{
     display: block;
     max-width: 70%;
     width: 60%;
-    height: 20vh;
+    height: 15vh;
     margin: 2rem auto;
     resize: none;
     border: 2px solid #231F20;
@@ -78,7 +68,6 @@ main p{
 }
 #translate-btn{
     background-color: var(--primary-clr);
-    /* color:var(--gray-clr); */
     border: 2px solid white;
     padding: 0.3rem;
     border-radius: 0.5rem;
@@ -113,7 +102,6 @@ footer .link-list li{
     padding: 1rem;
 }
 footer .footer-text {
-    /* font-weight: bold; */
     font-size: large;
 }
 footer li a i {
@@ -123,4 +111,27 @@ footer li a i {
 
 footer li a i:hover {
     transform: scale(1.5);
+}
+.img-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+
+.img {
+    width: 100%;
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+}
+
+@media screen and (max-width: 500px) {
+    h4 {
+        width: 50%
+    }
 }
